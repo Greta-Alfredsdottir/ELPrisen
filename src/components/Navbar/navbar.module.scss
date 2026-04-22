@@ -1,0 +1,21 @@
+// Styling til Navbar
+
+.navStyling{
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+
+    img{
+        width: 3rem;
+        height: 3rem;
+    }
+    
+    div{
+        display: flex;
+        flex-direction: row;
+        gap: 4px;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
