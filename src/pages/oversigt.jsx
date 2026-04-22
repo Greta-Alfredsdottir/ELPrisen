@@ -8,13 +8,17 @@ export function Oversigt() {
                 const res =await fetch(url)
                 const data = await res.json()
                 setOversigt(data)
-                
             }
             oversigt
         }, [])
     
 
     return(
-        <h1>Oversigt</h1>
+        <section>
+            <h1>Oversigt</h1>
+            <div>{oversigt}</div>
+
+        </section>
+
     )
 }
