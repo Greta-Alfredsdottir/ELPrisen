@@ -59,7 +59,7 @@ export function History() {
     return(
         <section>
             <h1>History</h1>
-            <li>{formatTime(time?.time_start)}------{time?.DKK_per_kWh}kr</li>
+            <li>{formatTime(time?.time_start)}~~~~~~~~{time?.DKK_per_kWh}kr</li>
         </section>
 
     )
