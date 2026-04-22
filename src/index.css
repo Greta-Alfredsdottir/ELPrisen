@@ -15,7 +15,7 @@ body {
 footer{
   margin-top: auto;
 }
-h1,h2,h3,h4,h5,h6,p,b,i,a {
+h1,h2,h3,h4,h5,h6,p,b,i,a,li {
   color: #ebebeb;
   text-decoration: none;
 }

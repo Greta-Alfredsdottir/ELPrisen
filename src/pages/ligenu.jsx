@@ -6,7 +6,7 @@ export function LigeNu() {
 
     const [nowTime, setNowTime] = useState(undefined)
 
-// Opret et JS data objeckt
+// Opret et JS data objeckt, for at vise den rigtige år/dag/time
     const date = new Date()
     const year = date.getFullYear()
 //0-11
