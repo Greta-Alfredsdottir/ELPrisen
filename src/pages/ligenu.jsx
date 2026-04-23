@@ -51,12 +51,13 @@ export function LigeNu() {
     },[])
 // vise tidspunkt lige nu
     return (
-        <section>
-        <h1>ELprisen Lige Nu </h1>
+        <section className = "ligenu">
+        <h1>ELPRISEN LIGE NU </h1>
         <div>
-            <h3>{nowTime?.DKK_per_kWh}kr pr. kwh</h3>
+            <h3>{nowTime?.DKK_per_kWh}kr </h3>
+            <h3>pr. kwh</h3>
         </div>
-        <h4>mellem {formatTime(nowTime?.time_start)}-{formatTime(nowTime?.time_end)}</h4>
+        <h4>{formatTime(nowTime?.time_start)}-{formatTime(nowTime?.time_end)}</h4>
         </section>
     )
 }
