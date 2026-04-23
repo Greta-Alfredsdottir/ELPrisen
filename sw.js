@@ -1,3 +1,12 @@
+import { VitePWA } from 'vite-plugin-pwa'
+
+export default defineConfig({
+  plugins: [
+    VitePWA({
+      injectRegister: 'auto'
+    })
+  ]
+})
 // Install Service Worker
 self.addEventListener('install', event => {
 	console.log('Service Worker has been installed');
