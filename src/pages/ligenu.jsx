@@ -53,9 +53,11 @@ export function LigeNu() {
     return (
         <section className = "ligenu">
         <h1>ELPRISEN LIGE NU </h1>
-        <div>
+        <div className="dagsPris">
+            <div>
             <h3>{nowTime?.DKK_per_kWh}kr </h3>
             <h3>pr. kwh</h3>
+            </div>
         </div>
         <h4>{formatTime(nowTime?.time_start)}-{formatTime(nowTime?.time_end)}</h4>
         </section>

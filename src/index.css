@@ -37,8 +37,36 @@ h1,h2,h3,h4,h5,h6,p,b,i,a,li {
   align-items: center;
   justify-content: center;
   padding: 20px;
+  background-color: #201e1e;
   span{
     color: #55ec20;
     font-weight: bold;
   }
+}
+.dagsPris{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-style: dashed;
+  border-color: #55ec20;
+  padding: 1rem;
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  background-color: #201e1e;
+
+    div{  
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-style: dashed;
+      border-color: #55ec20;
+      height: 100%;
+      width: 100%;
+      border-radius: 50%;
+    }
+  
+  
 }
