@@ -4,9 +4,9 @@ import { findTimeWindow } from "../utils/findTimeWindow";
 
 
 export function History() {
-    const [time, setTime] = useState(undefined)
+    const [data, setData] = useState(undefined)
 
-        // Opret et JS data objeckt, for at vise den rigtige år/dag/time
+    // Opret et JS data objeckt, for at vise den rigtige år/dag/time
     const date = new Date()
     const year = date.getFullYear()
 
@@ -23,9 +23,9 @@ export function History() {
     }
 
 
-   //  Vi skal lave en function der kan finde et objekt som ligger
-// inden for det tidspunkt vi har lige nu. 
-// eks. er den 20.23 så finder den objektet mellem 20-21
+    //  Vi skal lave en function der kan finde et objekt som ligger
+    // inden for det tidspunkt vi har lige nu. 
+    // eks. er den 20.23 så finder den objektet mellem 20-21
     console.log(day);
 
     const priceClass ="DK1"
@@ -38,12 +38,9 @@ export function History() {
                 if(!res.ok){
                     throw new Error('Failed to fetch')}
                 const data = await res.json()
-                const nowData = data.filter((item) => findTimeWindow(item.time_start, item.time_end))
-                if (nowData){
-                    setTime(nowData[0])
-                }
+                setData(data)
                 console.log("Data:", data);
-                console.log("Single data", nowData);
+                console.log("Single data");
             }
             
             catch(err){
@@ -54,12 +51,18 @@ export function History() {
         }
         getData()
     },[])
-    
 
+    
     return(
         <section className="historik">
             <h1>Historik</h1>
-            <li>{formatTime(time?.time_start)}~~~~~~~~{time?.DKK_per_kWh}kr</li>
+            <div>{data?.map((item) =>
+            <div>
+            <p> kl {formatTime(item.time_start)}</p>
+            <p>{item.DKK_per_kWh} kr </p>
+            </div>)}
+
+            </div>
         </section>
 
     )
