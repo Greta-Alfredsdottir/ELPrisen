@@ -4,7 +4,7 @@ import { findTimeWindow } from "../utils/findTimeWindow";
 
 
 export function Oversigt() {
-    const [time, setTime] = useState(undefined)
+    const [data, setData] = useState(undefined)
 
         // Opret et JS data objeckt, for at vise den rigtige år/dag/time
     const date = new Date()
@@ -38,13 +38,11 @@ export function Oversigt() {
                 if(!res.ok){
                     throw new Error('Failed to fetch')}
                 const data = await res.json()
-                const nowData = data.filter((item) => findTimeWindow(item.time_start, item.time_end))
-                if (nowData){
-                    setTime(nowData[0])
-                }
+                setData(data)
                 console.log("Data:", data);
-                console.log("Single data", nowData);
+                console.log("Single data");
             }
+               
             
             catch(err){
 
@@ -58,8 +56,13 @@ export function Oversigt() {
 
     return(
         <section className="oversigt">
-            <h1>Oversigt</h1>
-            <li>{formatTime(time?.time_start)}------{time?.DKK_per_kWh}kr</li>
+           <div>{data?.map((item) =>
+            <div className="listOversigt">
+            <p> kl {formatTime(item.time_start)}</p>
+            <p>{item.DKK_per_kWh} kr </p>
+            </div>)}
+
+            </div>
         </section>
 
     )
