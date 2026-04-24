@@ -75,7 +75,11 @@ h1,h2,h3,h4,h5,h6,p,b,i,a,li {
   margin: 20px;
   gap: 20px;
   padding: 20px;
-   
+}
+.listHistorik{
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
 }
 .mainFooter{
   display: flex;

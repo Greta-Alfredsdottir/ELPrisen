@@ -57,7 +57,7 @@ export function History() {
         <section className="historik">
             <h1>Historik</h1>
             <div>{data?.map((item) =>
-            <div>
+            <div className="listHistorik">
             <p> kl {formatTime(item.time_start)}</p>
             <p>{item.DKK_per_kWh} kr </p>
             </div>)}
