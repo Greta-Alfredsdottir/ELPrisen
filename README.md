@@ -8,4 +8,3 @@ Dette er en side hvor oplysninger kan findes
 https://github.com/vite-pwa/create-pwa/tree/main/templates/template-react
 Dette er en Github, hvor en vejledning er.
 
-Jeg har større problemmer med dette, når jeg prøver at insæt code, så virker siden ikke
