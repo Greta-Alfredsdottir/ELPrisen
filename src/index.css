@@ -12,36 +12,10 @@ body {
   padding: 0;
   margin: 0;
 }
-footer{
-  margin-top: auto;
-}
+
 h1,h2,h3,h4,h5,h6,p,b,i,a,li {
   color: #ebebeb;
   text-decoration: none;
-}
-.ligenu{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 20px;
-  gap: 20px;
-  padding: 20px;
-    h3, h4{ 
-      font-size: 2rem;
-    }
-}
-.mainFooter{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  background-color: #201e1e;
-  span{
-    color: #55ec20;
-    font-weight: bold;
-  }
 }
 .dagsPris{
   display: flex;
@@ -66,7 +40,45 @@ h1,h2,h3,h4,h5,h6,p,b,i,a,li {
       height: 100%;
       width: 100%;
       border-radius: 50%;
+    } 
+}
+.ligenu{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  gap: 20px;
+  padding: 20px;
+    h3, h4{ 
+      font-size: 2rem;
     }
-  
-  
+}
+.oversigt{
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  gap: 20px;
+  padding: 20px;
+    h3, h4{ 
+      font-size: 2rem;
+    }
+}
+.mainFooter{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #201e1e;
+  span{
+    color: #55ec20;
+    font-weight: bold;
+  }
+}
+
+footer{
+  margin-top: auto;
 }

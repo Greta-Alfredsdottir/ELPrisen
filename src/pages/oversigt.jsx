@@ -57,7 +57,7 @@ export function Oversigt() {
     
 
     return(
-        <section>
+        <section className="oversigt">
             <h1>Oversigt</h1>
             <li>{formatTime(time?.time_start)}------{time?.DKK_per_kWh}kr</li>
         </section>
